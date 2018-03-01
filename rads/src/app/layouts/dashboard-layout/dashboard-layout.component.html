@@ -1,0 +1,29 @@
+<div class="main-container">
+  <clr-alerts #applicationAlerts style="z-index: 1200">
+    <clr-alert [clrAlertType]="'alert-info'" [clrAlertAppLevel]="true" [(clrAlertClosed)]="messageClosed">
+      <clr-alert-item>
+        <span class="alert-text">
+            {{message}}
+        </span>
+        <div class="alert-actions">
+          <button class="btn alert-action" (click)="messageClosed = !messageClosed">Close</button>
+        </div>
+      </clr-alert-item>
+    </clr-alert>
+    <clr-alert [clrAlertType]="'alert-success'" [clrAlertAppLevel]="true" [(clrAlertClosed)]="commandClosed">
+      <clr-alert-item>
+        <span class="alert-text">
+            {{command}}
+        </span>
+        <div class="alert-actions">
+          <button class="btn alert-action" (click)="commandClosed = !commandClosed">Close</button>
+        </div>
+      </clr-alert-item>
+    </clr-alert>
+  </clr-alerts>
+  <div class="content-container">
+    <div class="content-area">
+      <app-content-container [offsetLeft]="5" [offsetRight]="5" [offsetTop]="5" [offsetBottom]="5"></app-content-container>
+    </div>
+  </div>
+</div>

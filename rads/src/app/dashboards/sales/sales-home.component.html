@@ -1,0 +1,17 @@
+<h1 class="text-center">Cost of Sales vs Sales - Rolling 6 Month Window</h1>
+<div style="width: 100%; height: 90%;">
+  <ngx-charts-area-chart
+  [scheme]="colorScheme"
+  [results]="multi"
+  [gradient]="gradient"
+  [xAxis]="showXAxis"
+  [yAxis]="showYAxis"
+  [legend]="showLegend"
+  [showXAxisLabel]="showXAxisLabel"
+  [showYAxisLabel]="showYAxisLabel"
+  [xAxisLabel]="xAxisLabel"
+  [yAxisLabel]="yAxisLabel"
+  [autoScale]="autoScale"
+  (select)="onSelect($event)">
+  </ngx-charts-area-chart>
+</div>

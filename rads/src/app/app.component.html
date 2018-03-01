@@ -1,0 +1,5 @@
+<div [ngSwitch]="userConfig.defaultLayout">
+  <app-admin-layout *ngSwitchCase="applicationConfig.layouts[0]"></app-admin-layout>
+  <app-dashboard-layout *ngSwitchCase="applicationConfig.layouts[1]"></app-dashboard-layout>
+  <app-login-layout *ngSwitchCase="applicationConfig.layouts[2]"></app-login-layout>
+</div>

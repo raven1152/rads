@@ -1,0 +1,20 @@
+<div class="p-1">
+  <h2 class="mt-0">Command Console for Analytics Dashboards</h2><br>
+  <input [(ngModel)]="message" style="width: 30%; margin-right: 5px;" (keypress)="keyPress($event)"/><button (click)="sendMessage()">Send</button>
+  <div class="card" style="height: 270px;">
+    <h4 class="card-header" style="margin-left: 5px; margin-top: 5px;">Messages</h4>
+    <div class="card-block" style="height: 215px; overflow: scroll;">
+      <div *ngFor="let message of messages; let isOdd = odd" style="padding-left: 5px;" [ngClass]="{'bg-faded': isOdd, 'bg-info text-white': !isOdd}">
+        {{message}}
+      </div>
+    </div>
+  </div>
+  <div class="card" style="height: 270px;">
+    <h4 class="card-header" style="margin-left: 5px; margin-top: 5px;">Commands</h4>
+    <div class="card-block" style="height: 215px; overflow: scroll;">
+      <div *ngFor="let command of commands; let isOdd = odd" style="padding-left: 5px;" [ngClass]="{'bg-faded': isOdd, 'bg-info text-white': !isOdd}">
+        {{formatCommand(command)}}
+      </div>
+    </div>
+  </div>
+</div>

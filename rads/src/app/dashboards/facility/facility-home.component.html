@@ -1,0 +1,16 @@
+<h1 class="text-center">Units Shipped - Current Month To Date, by Shift</h1>
+<div style="width: 100%; height: 90%;">
+<ngx-charts-bar-vertical
+  [scheme]="colorScheme"
+  [results]="single"
+  [gradient]="gradient"
+  [xAxis]="showXAxis"
+  [yAxis]="showYAxis"
+  [legend]="showLegend"
+  [showXAxisLabel]="showXAxisLabel"
+  [showYAxisLabel]="showYAxisLabel"
+  [xAxisLabel]="xAxisLabel"
+  [yAxisLabel]="yAxisLabel"
+  (select)="onSelect($event)">
+</ngx-charts-bar-vertical>
+</div>

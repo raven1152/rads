@@ -1,0 +1,25 @@
+<div style="width: 100%; height: 100%; padding: 0; margin: 0;">
+  <h1 class="text-center" style="margin: 0; padding: 0;">Job Data by Golly</h1>
+  <ngx-datatable
+    #draftingTable
+    class="material fullscreen"
+    style="top: 5px; height: 790px;"
+    [columnMode]="'force'"
+    [headerHeight]="50"
+    [footerHeight]="50"
+    [rowHeight]="55"
+    [scrollbarV]="true"
+    [scrollbarH]="true"
+    [rows]="jobs"
+    >
+    <!-- Row Column Template -->
+    <!--<ngx-datatable-column name="Description" prop="Description" [width]="400"></ngx-datatable-column>-->
+    <ngx-datatable-column name="Job Number" prop="JobNumber" [width]="80"></ngx-datatable-column>
+    <ngx-datatable-column name="Due Date" prop="DueDate" [width]="150"></ngx-datatable-column>
+    <ngx-datatable-column name="Ship Date" prop="ShipDate" [width]="150"></ngx-datatable-column>
+    <ngx-datatable-column name="Manual Complete %" prop="ProcessValue" [width]="80"></ngx-datatable-column>
+    <ngx-datatable-column name="Manual Complete %" prop="ProcessValueMax" [width]="80"></ngx-datatable-column>
+    <ngx-datatable-column name="Manual Complete %" prop="StepValue" [width]="80"></ngx-datatable-column>
+    <ngx-datatable-column name="Manual Complete %" prop="StepValueMax" [width]="80"></ngx-datatable-column>
+  </ngx-datatable>
+</div>

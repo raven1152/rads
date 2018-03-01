@@ -1,0 +1,66 @@
+<clr-main-container>
+  <clr-alerts #applicationAlerts>
+    <clr-alert [clrAlertType]="'alert-info'" [clrAlertAppLevel]="true" [(clrAlertClosed)]="messageClosed">
+      <clr-alert-item>
+        <span class="alert-text">
+            {{message}}
+        </span>
+        <div class="alert-actions">
+        <button class="btn alert-action" (click)="messageClosed = !messageClosed">Close</button>
+        </div>
+      </clr-alert-item>
+    </clr-alert>
+    <clr-alert [clrAlertType]="'alert-success'" [clrAlertAppLevel]="true" [(clrAlertClosed)]="commandClosed">
+      <clr-alert-item>
+        <span class="alert-text">
+            {{command}}
+        </span>
+        <div class="alert-actions">
+        <button class="btn alert-action" (click)="commandClosed = !commandClosed">Close</button>
+        </div>
+      </clr-alert-item>
+    </clr-alert>
+  </clr-alerts>
+
+  <clr-header>
+    <div class="branding">
+      <span class="title">Dashboard Admin Pages</span>
+    </div>
+    <!--
+    <div class="header-nav">
+      <a href="..." class="active nav-link"><span class="nav-text">Dashboards</span></a>
+      <a href="..." class="nav-link"><span class="nav-text">Admin</span></a>
+    </div>
+    -->
+  </clr-header>
+  <nav class="subnav">
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="guest" routerLinkActive="active">Guest</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="facility" routerLinkActive="active">Facility</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="it" routerLinkActive="active">Information Technology</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="sales" routerLinkActive="active">Sales</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="engineering" routerLinkActive="active">Engineering</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="drafting" routerLinkActive="active">Drafting</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="console" routerLinkActive="active">Comm Console</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="content-container">
+    <div class="content-area">
+      <app-content-container [offsetLeft]="5" [offsetRight]="5" [offsetTop]="110" [offsetBottom]="5"></app-content-container>
+    </div>
+  </div>
+</clr-main-container>
