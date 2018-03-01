@@ -1,4 +1,4 @@
-# RADS socket.io Realtime Server
+# RADS
 
 ## Real-time Analytics, Dashboards, and Signage
 
