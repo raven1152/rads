@@ -15,29 +15,54 @@ This project requires a node environment
 
 The console page is adapted from a socket.io chat example.  Eventually this will evolve into real-time server-initiated page updates so that graphics, table data, and other content can move dynamically as business processes update their data.  The following is my current thinking for a command architecture that might eventually support the real-time feature.
 
-#### Broadcast Messages -- received by all terminals.
+### Broadcast Messages -- received by all terminals.
 
-  Forms:
-    /broadcast [message]
-     -or-
-    [message]
+#### Forms:
 
-  Examples:
-    The quick brown fox jumped over the lazy dog.
-    /broadcast The quick brown fox jumped over the lazy dog.
+```bash
+/broadcast [message]
+```
 
-#### Client Commands -- command received by all terminals, confirmation received by the terminal that sent the command.
+or
 
-  Forms:
+```bash
+[message]
+```
+
+#### Examples:
+
+```bash
+The quick brown fox jumped over the lazy dog.
+```
+
+```bash
+/broadcast The quick brown fox jumped over the lazy dog.
+```
+
+### Client Commands -- command received by all terminals, confirmation received by the terminal that sent the command.
+
+#### Forms:
+
+```bash
     /[command name] [command targets] --[parameter name] [parameter value]
+````
 
-  Examples:
+#### Examples:
+
+```bash
     /refresh data ticker --nodes axcustulds01 axcustulds04 --period 60s
+````
 
-#### Server Commands -- command received by a server, confirmation received by the terminal that sent the command.
+### Server Commands -- command received by a server, confirmation received by the terminal that sent the command.
 
-  Forms:
+#### Forms:
+
+```bash
     /server [targets] /[host command string]
+````
 
-  Examples:
+#### Examples:
+
+```bash
     /server reddis.axc.com maven.axc.com /sudo /etc/init.d/mysql restart
+````
