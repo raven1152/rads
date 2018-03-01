@@ -1,27 +1,40 @@
-# Analytics
+# RADS Angular UI
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.6.
+## Real-time Analytics, Dashboards, and Signage
 
-## Development server
+_** This is a work in progress, and not intended to be used as production software._
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This project requires a node environment, and uses the angular cli with webpack to build and run.
 
-## Code scaffolding
+### Run the project using the following steps.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Install dependencies
+```bash
+npm install
+```
 
-## Build
+Run the server
+```bash
+ng serve --open
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+-or-
 
-## Running unit tests
+```bash
+ng serve
+```
+...and open a browser to http://localhost:4200/
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Dependencies
 
-## Running end-to-end tests
+Here is a list (so far) of the main libraries that I am using (or plan on using at some point) in this project.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* Node 8.9 - https://nodejs.org/en/
+* npm 5.5 - https://nodejs.org/en/ https://www.npmjs.com/
+* Angular 5.2 - https://angular.io/
+* Angular CLI 1.6 - https://cli.angular.io/
+* Clarity 0.11 - https://vmware.github.io/clarity/
+* Ngx-charts 7.1 - https://github.com/swimlane/ngx-charts
+* Ngx-datatable 11.2 - https://github.com/swimlane/ngx-datatable
+* Font Awesome 4.7 - https://fontawesome.com/v4.7.0/
+* Socket.io 2.0 - https://socket.io/
