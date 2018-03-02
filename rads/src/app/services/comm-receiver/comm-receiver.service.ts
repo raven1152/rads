@@ -3,43 +3,43 @@ import { Observable } from 'rxjs/Observable';
 import * as io from 'socket.io-client';
 
 @Injectable()
-export class CommService {
+export class CommReceiverService {
   private url = 'http://localhost:3000';
   private socket;
 
   constructor() {
     this.socket = io(this.url);
-    console.log('CommService: constructor');
+    console.log('CommReceiverService: constructor');
   }
 
   public sendMessage(message) {
-    this.socket.emit('message', message);
-    console.log('CommService: sendMessage\'message\'');
+    this.socket.emit('response', message);
+    console.log('CommReceiverService: sendMessage\'response\'');
   }
 
-  public getCommands() {
-    console.log('CommService: getCommands');
+  public getCommands(): Observable<any> {
+    console.log('CommReceiverService: getCommands');
     const observable = new Observable(observer => {
       this.socket.on('command', (data) => {
         observer.next(data);
-        console.log('CommService/on(command): subscribe');
+        console.log('CommReceiverService/on(command): subscribe');
       });
       return () => {
-        console.log('CommService/on(command): unsubscribe');
+        console.log('CommReceiverService/on(command): unsubscribe');
       };
     });
     return observable;
   }
 
-  public getMessages() {
-    console.log('CommService: getMessages');
+  public getMessages(): Observable<any> {
+    console.log('CommReceiverService: getMessages');
     const observable = new Observable(observer => {
       this.socket.on('message', (data) => {
         observer.next(data);
-        console.log('CommService/on(message): subscribe');
+        console.log('CommReceiverService/on(message): subscribe');
       });
       return () => {
-        console.log('CommService/on(message): unsubscribe');
+        console.log('CommReceiverService/on(message): unsubscribe');
       };
     });
     return observable;

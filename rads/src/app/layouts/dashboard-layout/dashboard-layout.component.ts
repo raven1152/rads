@@ -1,13 +1,13 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { ClrAlerts } from '@clr/angular';
-import { CommService } from '../../services/comm/comm.service';
+import { CommReceiverService } from '../../services/comm-receiver/comm-receiver.service';
 
 @Component({
   selector: 'app-dashboard-layout',
   templateUrl: './dashboard-layout.component.html',
   styleUrls: ['./dashboard-layout.component.scss']
 })
-export class DashboardLayoutComponent implements OnInit {
+export class DashboardLayoutComponent implements OnInit, OnDestroy {
   @ViewChild('applicationAlerts') public applicationAlerts: ClrAlerts;
   public message: string;
   public command: string;
@@ -20,7 +20,7 @@ export class DashboardLayoutComponent implements OnInit {
 
   public collapsed = true;
 
-  public constructor(public comm: CommService) { }
+  public constructor(public comm: CommReceiverService) { }
 
   public ngOnInit() {
     this.commMessages = this.comm.getMessages().subscribe(message => {

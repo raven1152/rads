@@ -1,5 +1,5 @@
 <clr-main-container>
-  <clr-alerts #applicationAlerts>
+  <clr-alerts #applicationAlerts style="z-index: 1200">
     <clr-alert [clrAlertType]="'alert-info'" [clrAlertAppLevel]="true" [(clrAlertClosed)]="messageClosed">
       <clr-alert-item>
         <span class="alert-text">
@@ -22,7 +22,7 @@
     </clr-alert>
   </clr-alerts>
 
-  <clr-header>
+  <clr-header style="z-index: 1200">
     <div class="branding">
       <span class="title">Dashboard Admin Pages</span>
     </div>
@@ -33,7 +33,7 @@
     </div>
     -->
   </clr-header>
-  <nav class="subnav">
+  <nav class="subnav" style="z-index: 1200">
     <ul class="nav">
       <li class="nav-item">
         <a class="nav-link" routerLink="guest" routerLinkActive="active">Guest</a>

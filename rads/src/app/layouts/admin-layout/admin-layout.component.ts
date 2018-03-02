@@ -1,6 +1,6 @@
 import { Component, ViewChild, OnInit, OnDestroy } from '@angular/core';
-import { CommService } from '../../services/comm/comm.service';
 import { ClrAlerts } from '@clr/angular';
+import { CommReceiverService } from '../../services/comm-receiver/comm-receiver.service';
 
 @Component({
   selector: 'app-admin-layout',
@@ -18,7 +18,7 @@ export class AdminLayoutComponent implements OnInit, OnDestroy {
   public commMessages;
   public commCommands;
 
-  public constructor(public comm: CommService) { }
+  public constructor(public comm: CommReceiverService) { }
 
   public ngOnInit() {
     this.commMessages = this.comm.getMessages().subscribe(message => {
