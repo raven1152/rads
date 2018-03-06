@@ -1,6 +1,6 @@
 import { Component, ViewChild, OnInit, OnDestroy } from '@angular/core';
 import { ClrAlerts } from '@clr/angular';
-import { CommReceiverService } from '../../services/comm-receiver/comm-receiver.service';
+import { CommService } from '../../services/comm/comm.service';
 
 @Component({
   selector: 'app-admin-layout',
@@ -18,21 +18,27 @@ export class AdminLayoutComponent implements OnInit, OnDestroy {
   public commMessages;
   public commCommands;
 
-  public constructor(public comm: CommReceiverService) { }
+  public constructor(public comm: CommService) { }
 
   public ngOnInit() {
+    console.log('AdminLayoutComponent: getMessages().subscribe()');
     this.commMessages = this.comm.getMessages().subscribe(message => {
+      console.log('AdminLayoutComponent: MESSAGE!');
       this.messages.push(message.toString());
       this.processMessage(message);
     });
+    console.log('AdminLayoutComponent: getCommands().subscribe()');
     this.commCommands = this.comm.getCommands().subscribe(command => {
+      console.log('AdminLayoutComponent: COMMAND!');
       this.commands.push(command);
       this.processCommand(command);
     });
   }
 
   public ngOnDestroy() {
+    console.log('~AdminLayoutComponent: getMessages().unsubscribe()');
     this.commMessages.unsubscribe();
+    console.log('~AdminLayoutComponent: getCommands().unsubscribe()');
     this.commCommands.unsubscribe();
   }
 

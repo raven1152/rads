@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test</title>
+</head>
+<body>
+<input type="text">
+<script src="/rxjs/rx.js"></script>
+<script type="text/javascript">
+  rx = Rx();
+  const node = document.querySelector('input[type=text]');
+  const input$ = rx.Observable.fromEvent(node, 'input');
+  input$.subscribe({
+    next: function(event) { console.log('You just typed ' + event.target.value + '!') },
+    error: function(err) { console.log('Oops... ' + err) },
+    complete: function() { console.log('Complete!') },
+  });
+</script>
+
+</body>
+</html>

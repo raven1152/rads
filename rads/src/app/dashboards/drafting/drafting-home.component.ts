@@ -23,11 +23,11 @@ export class DraftingHomeComponent implements OnInit, AfterViewInit, AfterConten
   }
 
   ngAfterViewInit() {
-    console.log('view-init');
-    console.log(this.draftingTable._columns);
-    console.log(this.draftingTable.columnTemplates);
-    console.log(this.draftingTable.columnTemplates[2]);
-    console.log(this.draftingTable.columnTemplates[3]);
+    // console.log('view-init');
+    // console.log(this.draftingTable._columns);
+    // console.log(this.draftingTable.columnTemplates);
+    // console.log(this.draftingTable.columnTemplates[2]);
+    // console.log(this.draftingTable.columnTemplates[3]);
   }
 }
 

@@ -7,40 +7,48 @@ import { CommService } from '../../services/comm/comm.service';
   styleUrls: ['./comm-console.component.scss']
 })
 export class CommConsoleComponent implements OnInit, OnDestroy {
+  public message;
   public messages: string[] = [];
   public commands: any[] = [];
-  public connection;
-  public cmdConnection;
-  public message;
+  public commMessages;
+  public commCommands;
 
-  constructor(private comm: CommService) {}
+  public constructor(public comm: CommService) { }
 
   ngOnInit() {
-    this.connection = this.comm.getMessages().subscribe(message => {
+    console.log('CommConsoleComponent: getMessages().subscribe()');
+    this.commMessages = this.comm.getMessages().subscribe(message => {
+      console.log('CommConsoleComponent: MESSAGE!');
       this.messages.push(message.toString());
     });
-    this.cmdConnection = this.comm.getCommands().subscribe(command => {
+    console.log('CommConsoleComponent: getCommands().subscribe()');
+    this.commCommands = this.comm.getCommands().subscribe(command => {
+      console.log('CommConsoleComponent: COMMAND!');
       this.commands.push(command);
     });
   }
 
   ngOnDestroy() {
-    this.connection.unsubscribe();
-    this.cmdConnection.unsubscribe();
+    console.log('~CommConsoleComponent: getMessages().unsubscribe()');
+    this.commMessages.unsubscribe();
+    console.log('~CommConsoleComponent: getCommands().unsubscribe()');
+    this.commCommands.unsubscribe();
+  }
+
+  keyPress(event: any) {
+    if (event.key === 'Enter') {
+      console.log('->');
+      this.sendMessage();
+    }
   }
 
   sendMessage() {
+    console.log('CommConsoleComponent: sendMessage()');
     this.comm.sendMessage(this.message);
     this.message = '';
   }
 
   formatCommand(command: any): string {
     return JSON.stringify(command);
-  }
-
-  keyPress(event: any) {
-    if (event.key === 'Enter') {
-      this.sendMessage();
-    }
   }
 }

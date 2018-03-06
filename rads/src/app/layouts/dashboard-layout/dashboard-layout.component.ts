@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { ClrAlerts } from '@clr/angular';
-import { CommReceiverService } from '../../services/comm-receiver/comm-receiver.service';
+import { CommService } from '../../services/comm/comm.service';
 
 @Component({
   selector: 'app-dashboard-layout',
@@ -18,23 +18,27 @@ export class DashboardLayoutComponent implements OnInit, OnDestroy {
   public commMessages;
   public commCommands;
 
-  public collapsed = true;
-
-  public constructor(public comm: CommReceiverService) { }
+  public constructor(public comm: CommService) { }
 
   public ngOnInit() {
+    console.log('DashboardLayoutComponent: getMessages().subscribe()');
     this.commMessages = this.comm.getMessages().subscribe(message => {
+      console.log('DashboardLayoutComponent: MESSAGE!');
       this.messages.push(message.toString());
       this.processMessage(message);
     });
+    console.log('DashboardLayoutComponent: getCommands().subscribe()');
     this.commCommands = this.comm.getCommands().subscribe(command => {
+      console.log('DashboardLayoutComponent: COMMAND!');
       this.commands.push(command);
       this.processCommand(command);
     });
   }
 
   public ngOnDestroy() {
+    console.log('~DashboardLayoutComponent: getMessages().unsubscribe()');
     this.commMessages.unsubscribe();
+    console.log('~DashboardLayoutComponent: getCommands().unsubscribe()');
     this.commCommands.unsubscribe();
   }
 

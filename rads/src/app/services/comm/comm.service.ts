@@ -9,37 +9,37 @@ export class CommService {
 
   constructor() {
     this.socket = io(this.url);
-    console.log('CommService: constructor');
+    console.log(`CommService: constructor - \'${this.url}\'`);
   }
 
   public sendMessage(message) {
+    console.log(`CommService: sendMessage \'${message}\'`);
     this.socket.emit('message', message);
-    console.log('CommService: sendMessage\'message\'');
   }
 
   public getCommands() {
-    console.log('CommService: getCommands');
+    console.log('CommService: subscribe(commands)');
     const observable = new Observable(observer => {
       this.socket.on('command', (data) => {
         observer.next(data);
-        console.log('CommService/on(command): subscribe');
+        console.log(`CommService: on(command) \'${data}\'`);
       });
       return () => {
-        console.log('CommService/on(command): unsubscribe');
+        console.log('CommService: unsubscribe');
       };
     });
     return observable;
   }
 
   public getMessages() {
-    console.log('CommService: getMessages');
+    console.log('CommService: subscribe(messages)');
     const observable = new Observable(observer => {
       this.socket.on('message', (data) => {
         observer.next(data);
-        console.log('CommService/on(message): subscribe');
+        console.log(`CommService: on(message) \'${data}\'`);
       });
       return () => {
-        console.log('CommService/on(message): unsubscribe');
+        console.log('CommService: unsubscribe');
       };
     });
     return observable;
