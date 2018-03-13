@@ -1,4 +1,13 @@
-rads-io/node_modules/
-rads/node_modules/
-rads-net/C#/obj/
-rads-net/C#/bin/
+
+rads/**/node_modules/
+
+rads-io/**/node_modules/
+
+rads-net/**/obj/
+rads-net/**/bin/
+rads-net/**/packages/
+
+rads_db/Include/
+rads_db/Lib/
+rads_db/tcl/
+rads_db/Scripts/
