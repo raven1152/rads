@@ -8,6 +8,12 @@ import { SalesHomeComponent } from './dashboards/sales/sales-home.component';
 import { EngineeringHomeComponent } from './dashboards/engineering/engineering-home.component';
 import { DraftingHomeComponent } from './dashboards/drafting/drafting-home.component';
 import { CommConsoleComponent } from './components/comm-console/comm-console.component';
+import { QualityHomeComponent } from './dashboards/quality/quality-home.component';
+import { FramesHomeComponent } from './dashboards/frames/frames-home.component';
+import { HeadersHomeComponent } from './dashboards/headers/headers-home.component';
+import { ShippingHomeComponent } from './dashboards/shipping/shipping-home.component';
+import { TubesHomeComponent } from './dashboards/tubes/tubes-home.component';
+import { FinsHomeComponent } from './dashboards/fins/fins-home.component';
 
 const routes: Routes = [
   {
@@ -59,11 +65,59 @@ const routes: Routes = [
     },
   },
   {
+    path: 'quality',
+    component: QualityHomeComponent,
+    pathMatch: 'full',
+    data: {
+      title: 'Quality Home'
+    },
+  },
+  {
+    path: 'frames',
+    component: FramesHomeComponent,
+    pathMatch: 'full',
+    data: {
+      title: 'Frames Home'
+    },
+  },
+  {
+    path: 'headers',
+    component: HeadersHomeComponent,
+    pathMatch: 'full',
+    data: {
+      title: 'Headers Home'
+    },
+  },
+  {
+    path: 'shipping',
+    component: ShippingHomeComponent,
+    pathMatch: 'full',
+    data: {
+      title: 'Shipping Home'
+    },
+  },
+  {
+    path: 'tubes',
+    component: TubesHomeComponent,
+    pathMatch: 'full',
+    data: {
+      title: 'Tubes Home'
+    },
+  },
+  {
+    path: 'fins',
+    component: FinsHomeComponent,
+    pathMatch: 'full',
+    data: {
+      title: 'Fins Home'
+    },
+  },
+  {
     path: 'console',
     component: CommConsoleComponent,
     pathMatch: 'full',
     data: {
-      title: 'Drafting Home'
+      title: 'Control Console'
     },
   },
   { path: '',

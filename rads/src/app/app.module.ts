@@ -4,6 +4,8 @@ import { BrowserAnimationsModule } from  '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { ClarityModule } from '@clr/angular';
 import { FormsModule } from '@angular/forms';
+import { ChartsModule } from 'ng2-charts';
+import { TableModule } from 'primeng/table';
 
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
@@ -31,6 +33,13 @@ import { CommConsoleComponent } from './components/comm-console/comm-console.com
 import { CommService } from './services/comm/comm.service';
 import { LoginLayoutComponent } from './layouts/login-layout/login-layout.component';
 import { CommReceiverService } from './services/comm-receiver/comm-receiver.service';
+import { QualityHomeComponent } from './dashboards/quality/quality-home.component';
+import { HeadersHomeComponent } from './dashboards/headers/headers-home.component';
+import { FramesHomeComponent } from './dashboards/frames/frames-home.component';
+import { ShippingHomeComponent } from './dashboards/shipping/shipping-home.component';
+import { TubesHomeComponent } from './dashboards/tubes/tubes-home.component';
+import { FinsHomeComponent } from './dashboards/fins/fins-home.component';
+import { CarService } from './services/car/car.service';
 
 @NgModule({
   declarations: [
@@ -50,6 +59,12 @@ import { CommReceiverService } from './services/comm-receiver/comm-receiver.serv
     ContainerDirective,
     CommConsoleComponent,
     LoginLayoutComponent,
+    QualityHomeComponent,
+    HeadersHomeComponent,
+    FramesHomeComponent,
+    ShippingHomeComponent,
+    TubesHomeComponent,
+    FinsHomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -60,6 +75,8 @@ import { CommReceiverService } from './services/comm-receiver/comm-receiver.serv
     BrowserAnimationsModule,
     AppRoutingModule,
     FormsModule,
+    ChartsModule,
+    TableModule,
   ],
   providers: [
     HttpClientModule,
@@ -70,6 +87,7 @@ import { CommReceiverService } from './services/comm-receiver/comm-receiver.serv
     JobService,
     CommService,
     CommReceiverService,
+    CarService,
   ],
   entryComponents: [
     ContentContainerComponent,
