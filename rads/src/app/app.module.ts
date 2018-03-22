@@ -32,7 +32,6 @@ import { ContainerDirective } from './directives/container.directive';
 import { CommConsoleComponent } from './components/comm-console/comm-console.component';
 import { CommService } from './services/comm/comm.service';
 import { LoginLayoutComponent } from './layouts/login-layout/login-layout.component';
-import { CommReceiverService } from './services/comm-receiver/comm-receiver.service';
 import { QualityHomeComponent } from './dashboards/quality/quality-home.component';
 import { HeadersHomeComponent } from './dashboards/headers/headers-home.component';
 import { FramesHomeComponent } from './dashboards/frames/frames-home.component';
@@ -86,7 +85,6 @@ import { CarService } from './services/car/car.service';
     AbstractService,
     JobService,
     CommService,
-    CommReceiverService,
     CarService,
   ],
   entryComponents: [
