@@ -1,0 +1,245 @@
+[{
+  "date": "12/31/13",
+  "oilPrice": "105.48",
+  "gasPrice": "4.24"
+},
+{
+  "date": "01/31/14",
+  "oilPrice": "102.10",
+  "gasPrice": "4.71"
+},
+{
+  "date": "02/28/14",
+  "oilPrice": "104.83",
+  "gasPrice": "6.00"
+},
+{
+  "date": "03/31/14",
+  "oilPrice": "104.04",
+  "gasPrice": "4.90"
+},
+{
+  "date": "04/30/14",
+  "oilPrice": "104.87",
+  "gasPrice": "4.66"
+},
+{
+  "date": "05/31/14",
+  "oilPrice": "105.71",
+  "gasPrice": "4.58"
+},
+{
+  "date": "06/30/14",
+  "oilPrice": "108.37",
+  "gasPrice": "4.59"
+},
+{
+  "date": "07/31/14",
+  "oilPrice": "105.23",
+  "gasPrice": "4.05"
+},
+{
+  "date": "08/31/14",
+  "oilPrice": "100.05",
+  "gasPrice": "3.91"
+},
+{
+  "date": "09/30/14",
+  "oilPrice": "95.85",
+  "gasPrice": "3.92"
+},
+{
+  "date": "10/31/14",
+  "oilPrice": "86.08",
+  "gasPrice": "3.78"
+},
+{
+  "date": "11/30/14",
+  "oilPrice": "76.99",
+  "gasPrice": "4.12"
+},
+{
+  "date": "12/31/14",
+  "oilPrice": "60.70",
+  "gasPrice": "3.48"
+},
+{
+  "date": "01/31/15",
+  "oilPrice": "47.11",
+  "gasPrice": "2.99"
+},
+{
+  "date": "02/28/15",
+  "oilPrice": "54.79",
+  "gasPrice": "2.87"
+},
+{
+  "date": "03/31/15",
+  "oilPrice": "52.83",
+  "gasPrice": "2.83"
+},
+{
+  "date": "04/30/15",
+  "oilPrice": "57.54",
+  "gasPrice": "2.61"
+},
+{
+  "date": "05/31/15",
+  "oilPrice": "62.51",
+  "gasPrice": "2.85"
+},
+{
+  "date": "06/30/15",
+  "oilPrice": "61.31",
+  "gasPrice": "2.78"
+},
+{
+  "date": "07/31/15",
+  "oilPrice": "54.34",
+  "gasPrice": "2.84"
+},
+{
+  "date": "08/31/15",
+  "oilPrice": "45.69",
+  "gasPrice": "2.77"
+},
+{
+  "date": "09/30/15",
+  "oilPrice": "46.28",
+  "gasPrice": "2.66"
+},
+{
+  "date": "10/31/15",
+  "oilPrice": "46.96",
+  "gasPrice": "2.34"
+},
+{
+  "date": "11/30/15",
+  "oilPrice": "43.11",
+  "gasPrice": "2.09"
+},
+{
+  "date": "12/31/15",
+  "oilPrice": "36.57",
+  "gasPrice": "1.93"
+},
+{
+  "date": "01/31/16",
+  "oilPrice": "29.78",
+  "gasPrice": "2.28"
+},
+{
+  "date": "02/29/16",
+  "oilPrice": "31.03",
+  "gasPrice": "1.99"
+},
+{
+  "date": "03/31/16",
+  "oilPrice": "37.34",
+  "gasPrice": "1.73"
+},
+{
+  "date": "04/30/16",
+  "oilPrice": "40.75",
+  "gasPrice": "1.92"
+},
+{
+  "date": "05/31/16",
+  "oilPrice": "45.94",
+  "gasPrice": "1.92"
+},
+{
+  "date": "06/30/16",
+  "oilPrice": "47.69",
+  "gasPrice": "2.59"
+},
+{
+  "date": "07/31/16",
+  "oilPrice": "44.13",
+  "gasPrice": "2.82"
+},
+{
+  "date": "08/31/16",
+  "oilPrice": "44.88",
+  "gasPrice": "2.82"
+},
+{
+  "date": "09/30/16",
+  "oilPrice": "45.04",
+  "gasPrice": "2.99"
+},
+{
+  "date": "10/31/16",
+  "oilPrice": "49.29",
+  "gasPrice": "2.98"
+},
+{
+  "date": "11/30/16",
+  "oilPrice": "45.26",
+  "gasPrice": "2.55"
+},
+{
+  "date": "12/31/16",
+  "oilPrice": "52.62",
+  "gasPrice": "3.59"
+},
+{
+  "date": "01/31/17",
+  "oilPrice": "53.59",
+  "gasPrice": "3.30"
+},
+{
+  "date": "02/28/17",
+  "oilPrice": "54.35",
+  "gasPrice": "2.85"
+},
+{
+  "date": "03/31/17",
+  "oilPrice": "50.90",
+  "gasPrice": "2.88"
+},
+{
+  "date": "04/30/17",
+  "oilPrice": "52.16",
+  "gasPrice": "3.10"
+},
+{
+  "date": "05/31/17",
+  "oilPrice": "49.89",
+  "gasPrice": "3.15"
+},
+{
+  "date": "06/30/17",
+  "oilPrice": "46.17",
+  "gasPrice": "2.98"
+},
+{
+  "date": "07/31/17",
+  "oilPrice": "47.66",
+  "gasPrice": "2.98"
+},
+{
+  "date": "08/31/17",
+  "oilPrice": "49.94",
+  "gasPrice": "2.90"
+},
+{
+  "date": "09/30/17",
+  "oilPrice": "52.95",
+  "gasPrice": "2.98"
+},
+{
+  "date": "10/31/17",
+  "oilPrice": "54.92",
+  "gasPrice": "2.88"
+},
+{
+  "date": "11/30/17",
+  "oilPrice": "59.93",
+  "gasPrice": "3.01"
+},
+{
+  "date": "12/31/17",
+  "oilPrice": "61.19",
+  "gasPrice": "2.81"
+}]

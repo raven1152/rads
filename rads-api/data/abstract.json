@@ -1,0 +1,122 @@
+[
+  {
+    "title": "Predictive Analytics, Big Data, and How to Make Them Work for You",
+    "location": "https://www.pcmag.com/article/345858/predictive-analytics-big-data-and-how-to-make-them-work-fo",
+    "date": "Jul 12, 2016",
+    "abstract": "Predictive analytics is the practical result of Big Data and business intelligence (BI). What do you do when your business collects staggering volumes of new data? Today's business applications are raking in mountains of new customer, market, social listening, and real-time app, cloud, or product ..."
+  },
+  {
+    "title": "A Predictive Analytics Premier - Harvard Business Review",
+    "location": "https://hbr.org/2014/09/a-predictive-analytics-primer",
+    "date": "Sep 2, 2014",
+    "abstract": "No one has the ability to capture and analyze data from the future. However, there is a way to predict the future using data from the past. It's called predictive analytics, and organizations do it every day. Has your company, for example, developed a customer lifetime value (CLTV) measure? That's using ..."
+  },
+  {
+    "title": "What is Predictive Analytics? Webopedia Definition",
+    "location": "https://www.webopedia.com/TERM/P/predictive_analytics.html",
+    "date": "",
+    "abstract": "Predictive Analytics is the practice of extracting information from existing data sets in order to determine reliable patterns and forecast what might happen in the future."
+  },
+  {
+    "title": "Where Predictive Analytics Is Having the Biggest Impact",
+    "location": "https://hbr.org/2016/05/where-predictive-analytics-is-having-the-biggest-impact",
+    "date": "May 25, 2016",
+    "abstract": "Our goal in this article is to offer specific, real-world case studies to show how big data has provided value for companies that have worked with Microsoft's analytics teams. These cases reveal the circumstances in which big data predictive analytics are likely to enable novel and high-value solutions, and ..."
+  },
+  {
+    "title": "How predictive analytics discovers a data breach before it happens",
+    "location": "https://techcrunch.com/2016/07/25/how-predictive-analytics-discovers-a-data-breach-before-it-happens/",
+    "date": "Jul 25, 2016",
+    "abstract": "Though a very promising trend, predictive analytics has some hefty requirements when applied to cybersecurity use cases. For one thing, the variety and volume of data involved in identifying and predicting security threats are overwhelming. This necessitates the use of analytics solutions that can scale to ..."
+  },
+  {
+    "title": "Big Data Allows For Higher-Education Predictive Analytics - The Atlantic",
+    "location": "https://www.theatlantic.com/education/archive/2016/11/the-colleges-are-watching/506129/",
+    "date": "Nov 1, 2016",
+    "abstract": "With access to predictive analytics and more data than ever before, how can universities avoid invading students' privacy while promoting academic success?"
+  },
+  {
+    "title": "Predictive analytics - Wikipedia",
+    "location": "https://en.wikipedia.org/wiki/Predictive_analytics",
+    "date": "N/A",
+    "abstract": "Predictive analytics encompasses a variety of statistical techniques from predictive modelling, machine learning, and data mining that analyze current and historical facts to make predictions about future or otherwise unknown events."
+  },
+  {
+    "title": "Predictive Analytics: What it is and why it matters | SAS",
+    "location": "https://www.sas.com/en_us/insights/analytics/predictive-analytics.html",
+    "date": "N/A",
+    "abstract": "Predictive analytics is the use of data, statistical algorithms and machine learning techniques to identify the likelihood of future outcomes based on historical data."
+  },
+  {
+    "title": "What is Predictive Analytics ? - Predictive Analytics Today",
+    "location": "https://www.predictiveanalyticstoday.com/what-is-predictive-analytics/",
+    "date": "N/A",
+    "abstract": "Predictive analytics is the branch of the advanced analytics which is used to make predictions about unknown future events. Predictive analytics uses many techniques from data mining, statistics, modeling, machine learning, and artificial intelligence to analyze current data to make predictions about future."
+  },
+  {
+    "title": "What is predictive analytics? - Definition from WhatIs.com",
+    "location": "https://www.mathworks.com/discovery/predictive-analytics.html",
+    "date": "N/A",
+    "abstract": "This definition explains the meaning of predictive analytics, also known as predictive analysis, and how data scientists use data to mine for insights."
+  },
+  {
+    "title": "What Is Predictive Analytics? - 3 Things You Need to Know - MATLAB",
+    "location": "https://www.mathworks.com/discovery/predictive-analytics.html",
+    "date": "N/A",
+    "abstract": "Predictive analytics uses historical data to predict future events. Learn about what it is, why it is important, and more about predictive analytics with MATLAB."
+  },
+  {
+    "title": "Predictive Analytics | IBM Analytics",
+    "location": "https://www.ibm.com/analytics/data-science/predictive-analytics",
+    "date": "N/A",
+    "abstract": "Predictive analytics brings together advanced analytics capabilities spanning ad-hoc statistical analysis, predictive modeling, data mining, text analytics, optimization, real-time scoring and machine learning. These tools help organizations discover patterns in data and go beyond knowing what has happened to anticipating ..."
+  },
+  {
+    "title": "What is Predictive Analytics? Definition and Models - NGData",
+    "location": "https://www.ngdata.com/what-is-predictive-analytics/",
+    "date": "Jan 12, 2018",
+    "abstract": "Definition of Predictive Analytics. Predictive analytics involves extracting data from existing data sets with the goal of identifying trends and patterns. These trends and patterns are then used to predict future outcomes and trends. While it's not an absolute science, predictive analytics does provide companies ..."
+  },
+  {
+    "title": "The Predictive Analytics Guide - resource list from PAW",
+    "location": "http://www.predictiveanalyticsworld.com/predictive-analytics/",
+    "date": "N/A",
+    "abstract": "Predictive Analytics: The Power to Predict Who Will Click, Buy, Lie, or Die. Read this rich, fascinating — surprisingly accessible — introduction by former Columbia University professor and Predictive Analytics World founder Eric Siegel, which reveals the power and perils of predictive analytics, showing how predicting ..."
+  },
+  {
+    "title": "Statistics.com - Predictive Analytics 1 - Machine Learning Tools",
+    "location": "https://www.statistics.com/predictive-analytics-1/",
+    "date": "N/A",
+    "abstract": "Aim of Course: In this online course, “Predictive Analytics 1 - Machine Learning Tools,” you will be introduced to the basic concepts in predictive analytics, also called predictive modeling, the most prevalent form of data mining. This course covers the two core paradigms that account for most business applications of ..."
+  },
+  {
+    "title": "Predictive Analytics Solutions in Healthcare - Health Catalyst",
+    "location": "https://www.healthcatalyst.com/predictive-analytics",
+    "date": "N/A",
+    "abstract": "How can predictive analytics solutions in healthcare be successfully implemented? Learn more about the insights to implementation and intervention ..."
+  },
+  {
+    "title": "Practical Predictive Analytics: Models and Methods | Coursera",
+    "location": "https://www.coursera.org/learn/predictive-analytics",
+    "date": "N/A",
+    "abstract": "Practical Predictive Analytics: Models and Methods from University of Washington. Statistical experiment design and analytics are at the heart of data science. In this course you will design statistical experiments and analyze the results using ..."
+  },
+  {
+    "title": "What Is Predictive Analytics? 3 Real-World Examples - Logi Analytics",
+    "location": "https://www.logianalytics.com/bi-trends/what-is-predictive-analytics/",
+    "date": "Nov 7, 2017",
+    "abstract": "Predictive analytics refers to using historical data, machine learning, and artificial intelligence to predict what will happen in the future."
+  },
+  {
+    "title": "Predictive Analytics Software & Solutions - Salesforce.com",
+    "location": "https://www.salesforce.com/hub/analytics/what-is-predictive-analytics/",
+    "date": "N/A",
+    "abstract": "Understand the difference between descriptive, predictive, and prescriptive analytics."
+  },
+  {
+    "title": "Predictive Analytics | Pegasystems",
+    "location": "https://www.pega.com/predictive-analytics",
+    "date": "N/A",
+    "abstract": "In today's constantly connected world where an increasingly large amount of data is collected and analyzed, predictive analytics plays a critical role in business. Predictive analysis is the discipline of using current and historical data to derive predictions about unknowns such as future trends and events. The modern digital ..."
+  }
+]

@@ -2,6 +2,7 @@ var app = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 var Rx = require('rxjs');
+var __dataDirectory = 'C:\\rads\\rads-api\\data\\';
 
 app.get('/', function(req, res) {
   res.sendFile(__dirname + '/index.html');
@@ -61,6 +62,23 @@ io.on('connection', function(socket) {
   socket.on('disconnect', function() {
     console.log('user disconnected');
   });
+});
+
+var fs = require('fs');
+console.log('setting up file system watcher on \'' + __dataDirectory + '\'.');
+var watcher = fs.watch(__dataDirectory, {
+  'persistent': true,
+  'recursive': false
+});
+watcher.on('change', function(eventType, filename) {
+  var idx = filename.lastIndexOf('.');
+  var targetData = filename.substring(0, idx);
+  io.emit('command', {
+    'command': 'refresh',
+    'targetType': 'dashboard',
+    'eventType': eventType,
+    'targetData': targetData
+  })
 });
 
 http.listen(3000, function() {

@@ -1,0 +1,9 @@
+{
+  "restartable": "rs",
+  "ignore": [
+    "data/*",
+    "node_modules/**/node_modules",
+    "nodemon.json"
+  ],
+  "verbose": false
+}

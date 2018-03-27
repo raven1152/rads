@@ -1,10 +1,9 @@
 module.exports = {
   apps : [
     {
-      name      : 'rads-io',
+      name      : 'r-io',
       script    : 'index.js',
-      instances : 4,
-      exec_mode : 'cluster'
+      instances : 1
     }
   ]
 };

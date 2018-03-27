@@ -4,15 +4,15 @@ import 'rxjs/add/operator/toPromise';
 
 @Injectable()
 export class JobService {
-  public apiRoot = 'assets/data';
+  public apiRoot = 'api/static';
   public apiJobs = 'job-data';
   public rows: any[];
 
   constructor(private http: HttpClient) { }
 
   public async getJobs(): Promise<Job[]> {
-    const apiURL = `${this.apiRoot}/${this.apiJobs}.json`;
-    await this.http.get<Job[]>(apiURL)
+    const apiURL = `${this.apiRoot}/${this.apiJobs}`;
+    await this.http.post<Job[]>(apiURL, '')
         .toPromise()
         .then(
           res => {

@@ -39,6 +39,7 @@ import { ShippingHomeComponent } from './dashboards/shipping/shipping-home.compo
 import { TubesHomeComponent } from './dashboards/tubes/tubes-home.component';
 import { FinsHomeComponent } from './dashboards/fins/fins-home.component';
 import { CarService } from './services/car/car.service';
+import { ChartDataService } from './services/chart-data/chart-data.service';
 
 @NgModule({
   declarations: [
@@ -86,6 +87,7 @@ import { CarService } from './services/car/car.service';
     JobService,
     CommService,
     CarService,
+    ChartDataService,
   ],
   entryComponents: [
     ContentContainerComponent,

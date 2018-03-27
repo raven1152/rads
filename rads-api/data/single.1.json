@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Hardware",
+    "value": 300
+  },
+  {
+    "name": "Software",
+    "value": 114
+  },
+  {
+    "name": "External",
+    "value": 42
+  }
+]

@@ -1,16 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { ChartDataService, MultiData } from '../../services/chart-data/chart-data.service';
+import { CommService } from '../../services/comm/comm.service';
 
 @Component({
   selector: 'app-sales-home',
   templateUrl: './sales-home.component.html',
   styleUrls: ['./sales-home.component.scss']
 })
-export class SalesHomeComponent {
-  public multi: any[];
-
-  public view: any[] = [700, 400];
-
-  // options
+export class SalesHomeComponent implements OnInit, OnDestroy {
   public showXAxis = true;
   public showYAxis = true;
   public gradient = false;
@@ -19,80 +16,38 @@ export class SalesHomeComponent {
   public xAxisLabel = 'Month';
   public showYAxisLabel = true;
   public yAxisLabel = 'US Dollars';
-
-  public colorScheme = {
-    domain: ['#1e7836', '#aa2f26']
-  };
-
-  // line, area
+  public colorScheme = { domain: ['#1e7836', '#aa2f26']};
   public autoScale = true;
 
-  public constructor() {
-    Object.assign(this, {multi});
+  public data: any[];
+  public command: string;
+  public commCommands;
+  public targetData = 'single';
+
+  public constructor(public dataService: ChartDataService, public comm: CommService) { }
+
+  async ngOnInit() {
+    this.data = await this.dataService.getMultiData();
+    this.commCommands = this.comm.getCommands().subscribe(async (command) => {
+      await this.processCommand(command);
+    });
+  }
+
+  public async processCommand(command: any) {
+    this.command = JSON.stringify(command);
+    if (command.command === 'refresh'
+      && command.targetType === 'dashboard'
+      && command.targetData === this.targetData
+    ) {
+      this.data = await this.dataService.getMultiData();
+    }
+  }
+
+  public ngOnDestroy() {
+    this.commCommands.unsubscribe();
   }
 
   public onSelect(event) {
     console.log(event);
   }
 }
-
-const multi = [
-  {
-    'name': 'Sales',
-    'series': [
-      {
-        'name': '01',
-        'value': 720000
-      },
-      {
-        'name': '02',
-        'value': 894000
-      },
-      {
-        'name': '03',
-        'value': 910000
-      },
-      {
-        'name': '04',
-        'value': 775000
-      },
-      {
-        'name': '05',
-        'value': 620000
-      },
-      {
-        'name': '06',
-        'value': 700000
-      }
-    ]
-  },
-  {
-    'name': 'Cost of Sales',
-    'series': [
-      {
-        'name': '01',
-        'value': 660000
-      },
-      {
-        'name': '02',
-        'value': 710000
-      },
-      {
-        'name': '03',
-        'value': 722000
-      },
-      {
-        'name': '04',
-        'value': 600000
-      },
-      {
-        'name': '05',
-        'value': 550000
-      },
-      {
-        'name': '06',
-        'value': 560000
-      }
-    ]
-  }
-];

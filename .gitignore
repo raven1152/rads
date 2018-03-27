@@ -3,6 +3,8 @@ rads/**/node_modules/
 
 rads-io/**/node_modules/
 
+rads-api/**/node_modules/
+
 rads-net/**/obj/
 rads-net/**/bin/
 rads-net/**/packages/
