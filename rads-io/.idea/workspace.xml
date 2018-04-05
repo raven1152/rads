@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cd4b3fe4-d09f-4144-a87c-f62870d94fdb" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/../rads-api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../rads-api/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rads/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../rads/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../rads/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../rads/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />

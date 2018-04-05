@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="34ae8406-e737-408c-af33-5889e1633d8d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/../rads-io/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../rads-io/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rads/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../rads/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../rads/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../rads/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -149,7 +150,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13125" />
       <window_info anchor="bottom" id="TODO" order="6" />
